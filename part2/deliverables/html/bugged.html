@@ -1,0 +1,41 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+	    <meta charset="utf-8">
+
+	    <title>Bugged</title>
+	    <meta name="hiring purpose" content="To test the troubleshooting chops">
+	    <meta name="functionality" content="Todo List">
+	    <meta name="author" content="Kixer">
+
+	    <link rel="stylesheet" href="../css/bugged.css">
+
+	    <!-- [if lt IE 9]>
+	        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+	    <![endif] -->
+	</head>
+
+    <body onload="getPreexistingList()">
+ 		<div id="myDIV" class="header">
+  			<h2>My Kixer To Do List</h2>
+  			<input type="text" id="myInput" placeholder="My next task goes here...">
+  			<span onclick="newElement()" class="addBtn">Add</span>
+		</div>
+
+		<ul id="myUL">
+			<!-- below is the expected HTML format for our todo list -->
+  			<!-- 
+	  			<li class="checked">Solve Part 1</li>
+	 			<li class="checked">Take a coffee break</li>
+	  			<li>Solve Part 2</li>
+				<li>Go back and write up the problems I found, solutions, and my troubleshooting steps</li>
+				<li>Modify third template from part 1 so it is amazing</li>
+				<li>Solve Part 3</li>
+				<li>Submit homework assignment and relax</li> 
+			-->
+		</ul>
+    </body>
+</html>
+ 
+ <script type="text/javascript" src="../js/bugged.js"></script> 
