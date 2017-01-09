@@ -34,6 +34,7 @@ span:first-child{
   display: block;
   margin-bottom: 10px;
   font-weight: bold;
+  font-size: 15px;
 }
 span:last-child{
   font-size: 13px;
@@ -53,4 +54,5 @@ input{
   color: white;
   height: 43px;
   font-size: 15px;
+  font-weight: bold;
 }
