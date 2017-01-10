@@ -10,6 +10,7 @@ body{
 }
 h3{
   margin-top: 0;
+  font-size: 30px;
 }
 .ad-container{
   width: 30%;
@@ -28,14 +29,14 @@ h3{
   position: absolute;
   color: white;
   opacity: 1;
-  top: 45px;
+  top: 60px;
   width: 100%;
   text-align: center;
-  font-size: 20px;
+  font-size: 40px;
 }
 .ad-container img{
   max-width: 100%;
-  opacity: 0.4;
+  opacity: 0.5;
   width: 100%;
   height: 100%;
   object-fit: fill;
