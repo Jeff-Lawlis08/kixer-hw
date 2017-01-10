@@ -1,0 +1,58 @@
+#ad{
+  border: 1px solid #E1E1E1;
+  width: 25rem;
+  font-family: sans-serif;
+}
+#icon{
+  width: 60px;
+  height: 60px;
+}
+#title-description{
+  display: inline-block;
+  vertical-align: top;
+}
+#ad-head{
+  padding: 4px;
+}
+h3{
+  margin: 0;
+  letter-spacing: -1px;
+}
+#ad-foot{
+  padding: 5px;
+}
+#ad-foot::after{
+  display: block;
+  content: '';
+  clear: both;
+}
+#category-stars{
+  width: 50%;
+  display: inline-block;
+}
+span:first-child{
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 15px;
+}
+span:last-child{
+  font-size: 13px;
+}
+#stars{
+  letter-spacing: -2px;
+}
+.star{
+  width: 13px;
+}
+input{
+  font-family: sans-serif;
+  float: right;
+  background-color: #62AEE9;
+  border: none;
+  width: 163px;
+  color: white;
+  height: 43px;
+  font-size: 15px;
+  font-weight: bold;
+}

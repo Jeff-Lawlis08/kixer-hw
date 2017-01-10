@@ -6,7 +6,8 @@
 /* Define main body's margins */
 body {
     display: block;
-    margin: 8px 8px 8px 8000px;
+    margin: 8px 8px 8px 8px;
+/* adjusted margin so content is visible */
 }
 
 /* Remove margins and padding from the list */

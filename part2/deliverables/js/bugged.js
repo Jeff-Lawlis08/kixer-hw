@@ -20,7 +20,7 @@ function hideClickedListItems(){
     close[i].onclick = function() {
       var div = this.parentElement;
       div.style.display = "none";
-    }
+    };
   }
 }
 
@@ -36,7 +36,8 @@ function addCheckedSymbolToHTML() {
 }
 
 // Create a new list item when clicking on the "Add" button
-function newElemnet() {
+function newElement() {
+// Fixed mispelling of Element
   var li = document.createElement("li");
   var inputValue = document.getElementById("myInput").value;
   var t = document.createTextNode(inputValue);
@@ -61,8 +62,19 @@ function parseJSONtoHTML(response) {
   var html = "";
   var i;
   // todo
- 
+  var preexistingObjs = JSON.parse(response).previousTasks;
+  html = preexistingObjs.map(function (obj, i, arr){
+    var listItem;
+    if(obj.done==='true'){
+      listItem = '<li class="checked">'+obj.name+'</li>';
+    } else {
+      listItem = '<li>'+obj.name+'</li>';
+    }
+    return listItem;
+  });
   return html;
+  //this function was returning an empty string
+  //mapped to return a group of list items in html
 }
 
 // Load preexisting tasks from file
@@ -72,10 +84,9 @@ function getPreexistingList() {
   var preexistingList;
   xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-      
-      console.log('got the preexisting list items')
       preexistingList = parseJSONtoHTML(this.responseText);
-      console.log('copying list into view')
+      console.log('got the preexisting list items');
+      console.log('copying list into view');
       document.getElementById("myUL").innerHTML = preexistingList;
       setTimeout(function() {
         addCloseButtonsToHTML();
