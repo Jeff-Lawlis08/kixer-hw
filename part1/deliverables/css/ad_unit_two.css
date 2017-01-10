@@ -2,6 +2,7 @@
   border: 1px solid #E1E1E1;
   width: 25rem;
   font-family: serif;
+  background: whitesmoke;
 }
 #icon{
   width: 60px;
@@ -19,6 +20,7 @@ h3{
   margin: 0;
   letter-spacing: -1px;
   font-size: 35px;
+  border-bottom: 1px solid #E1E1E1;
 }
 #ad-foot{
   padding: 5px;
@@ -30,10 +32,12 @@ h3{
 }
 #category-stars{
   width: 50%;
-  display: inline-block;
+  display: block;
+  margin: 10px auto;
+  text-align: center;
 }
 span:first-child{
-  display: block;
+  /*display: block;*/
   margin-bottom: 10px;
   font-weight: bold;
   font-size: 15px;
@@ -43,6 +47,7 @@ span:last-child{
 }
 #stars{
   letter-spacing: -2px;
+  display: inline-block;
 }
 .star{
   width: 13px;
@@ -57,4 +62,5 @@ input{
   height: 43px;
   font-size: 15px;
   font-weight: bold;
+  width: 100%;
 }
