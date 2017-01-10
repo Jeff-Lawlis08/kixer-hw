@@ -16,6 +16,7 @@ h3{
   display: inline-block;
   background-color: black;
   position: relative;
+  height: 300px;
 }
 #ad-container-1{
   margin-right: 10%;
@@ -35,6 +36,9 @@ h3{
 .ad-container img{
   max-width: 100%;
   opacity: 0.4;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
 }
 .ad-container:hover img{
   opacity: 1;
