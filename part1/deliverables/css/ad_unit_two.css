@@ -1,7 +1,7 @@
 #ad{
   border: 1px solid #E1E1E1;
   width: 25rem;
-  font-family: sans-serif;
+  font-family: serif;
 }
 #icon{
   width: 60px;
@@ -10,6 +10,7 @@
 #title-description{
   display: inline-block;
   vertical-align: top;
+  text-align: center;
 }
 #ad-head{
   padding: 4px;
@@ -17,6 +18,7 @@
 h3{
   margin: 0;
   letter-spacing: -1px;
+  font-size: 35px;
 }
 #ad-foot{
   padding: 5px;
@@ -37,7 +39,7 @@ span:first-child{
   font-size: 15px;
 }
 span:last-child{
-  font-size: 13px;
+  font-size: 17px;
 }
 #stars{
   letter-spacing: -2px;
@@ -46,7 +48,7 @@ span:last-child{
   width: 13px;
 }
 input{
-  font-family: sans-serif;
+  font-family: serif;
   float: right;
   background-color: #62AEE9;
   border: none;

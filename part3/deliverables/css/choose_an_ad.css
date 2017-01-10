@@ -1,0 +1,60 @@
+body{
+  margin: 0;
+  font-family: sans-serif;
+}
+#gallery{
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 0;
+  background: whitesmoke;
+}
+h3{
+  margin-top: 0;
+}
+.ad-container{
+  width: 30%;
+  display: inline-block;
+  background-color: black;
+  position: relative;
+}
+#ad-container-1{
+  margin-right: 10%;
+}
+#ad-container-2{
+  margin-left: 10%;
+}
+.ad-title{
+  position: absolute;
+  color: white;
+  opacity: 1;
+  top: 45px;
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+}
+.ad-container img{
+  max-width: 100%;
+  opacity: 0.4;
+}
+.ad-container:hover img{
+  opacity: 1;
+}
+.ad-container:hover span{
+  display: none;
+}
+#display-area{
+  padding-top: 10px;
+}
+#display-selected{
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+}
+h4{
+  text-align: center;
+  margin-top: 0;
+  font-size: 30px;
+}
+#display-selected img{
+  max-width: 100%;
+}
